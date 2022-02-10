@@ -263,23 +263,33 @@
 									enctype="multipart/form-data"
 								>
 									<div class="mb-3">
-										<label for="product_name" class="form-label"
-											>product_name</label
+										<label for="transact_code" class="form-label"
+											>Stock In Code</label
+										>
+										<input
+											type="text"
+											class="form-control"
+											name="transact_code"
+											id="transact_code"
+											value="ITRC-001"
+											readonly
+										/>
+									</div>
+									<div class="mb-3">
+										<label for="product_category" class="form-label"
+											>Product Name</label
 										>
 										<select
 											name="product_category"
 											class="form-select"
 											aria-label="Default select example"
 										>
-											<option selected>Choose product</option>
-											<option value="gula">Gula SHS - PG CB</option>
-											<option value="tetes">Gula Bulk - PG CB</option>
+											<option selected>Choose Product Name</option>
+											<option value="">Gula Bulk - PG CB</option>
 										</select>
 									</div>
 									<div class="mb-3">
-										<label for="company_name" class="form-label"
-											>company_name</label
-										>
+										<label for="company_name" class="form-label">Company</label>
 										<input
 											type="text"
 											class="form-control"
@@ -291,7 +301,7 @@
 									</div>
 									<div class="mb-3">
 										<label for="class_name" class="form-label"
-											>class_name</label
+											>Product Class</label
 										>
 										<input
 											type="text"
@@ -303,56 +313,56 @@
 										/>
 									</div>
 									<div class="mb-3">
-										<label for="product_category" class="form-label"
-											>product_category</label
+										<label for="class_name" class="form-label"
+											>Product Category</label
 										>
 										<input
 											type="text"
 											class="form-control"
-											name="product_category"
-											id="product_category"
+											name="class_name"
+											id="class_name"
 											value="Gula"
 											readonly
 										/>
 									</div>
 									<div class="mb-3">
-										<label for="subproduct_category" class="form-label"
-											>subproduct_category</label
+										<label for="class_name" class="form-label"
+											>Product Subcategory</label
 										>
 										<input
 											type="text"
 											class="form-control"
-											name="subproduct_category"
-											id="subproduct_category"
+											name="class_name"
+											id="class_name"
 											value="Gula SHS"
 											readonly
 										/>
 									</div>
 									<div class="mb-3">
-										<label for="product_uom" class="form-label"
-											>product_uom</label
+										<label for="class_name" class="form-label"
+											>Product Unit</label
 										>
 										<input
 											type="text"
 											class="form-control"
-											name="product_uom"
-											id="product_uom"
+											name="class_name"
+											id="class_name"
 											value="Kg"
 											readonly
 										/>
 									</div>
 									<div class="mb-3">
-										<label for="stock_in" class="form-label">stock_in</label>
+										<label for="quantity" class="form-label">Quantity</label>
 										<input
 											type="number"
 											class="form-control"
-											name="stock_in"
-											id="stock_in"
+											name="quantity"
+											id="quantity"
 										/>
 									</div>
 									<div class="mb-3">
 										<label for="unit_price" class="form-label"
-											>unit_price</label
+											>Unit Price</label
 										>
 										<input
 											type="number"
@@ -374,9 +384,13 @@
 											readonly
 										/>
 									</div>
-									<button type="submit" class="btn btn-primary bg-darkblue">
+									<a
+										href="product-items.html"
+										type="submit"
+										class="btn btn-primary bg-darkblue"
+									>
 										Submit
-									</button>
+									</a>
 								</form>
 							</div>
 						</div>

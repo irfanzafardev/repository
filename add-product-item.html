@@ -264,7 +264,7 @@
 								>
 									<div class="mb-3">
 										<label for="product_code" class="form-label"
-											>product_code</label
+											>Product Code</label
 										>
 										<input
 											type="text"
@@ -277,7 +277,7 @@
 									</div>
 									<div class="mb-3">
 										<label for="product_name" class="form-label"
-											>product_name</label
+											>Product Name</label
 										>
 										<input
 											type="text"
@@ -287,9 +287,7 @@
 										/>
 									</div>
 									<div class="mb-3">
-										<label for="company_name" class="form-label"
-											>company_name</label
-										>
+										<label for="company_name" class="form-label">Company</label>
 										<input
 											type="text"
 											class="form-control"
@@ -301,7 +299,7 @@
 									</div>
 									<div class="mb-3">
 										<label for="class_name" class="form-label"
-											>class_name</label
+											>Product Class</label
 										>
 										<input
 											type="text"
@@ -314,7 +312,7 @@
 									</div>
 									<div class="mb-3">
 										<label for="product_category" class="form-label"
-											>product_category</label
+											>Product Category</label
 										>
 										<select
 											name="product_category"
@@ -329,44 +327,46 @@
 									</div>
 									<div class="mb-3">
 										<label for="subproduct_category" class="form-label"
-											>subproduct_category</label
+											>Subproduct Category</label
 										>
 										<select
 											name="subproduct_category"
 											class="form-select"
 											aria-label="Default select example"
 										>
-											<option selected>Choose sub product category</option>
+											<option selected>Choose Sub Category</option>
 											<option value="gula shs">Gula SHS</option>
 											<option value="gula bulk">Gula Bulk</option>
 										</select>
 									</div>
 									<div class="mb-3">
 										<label for="product_uom" class="form-label"
-											>product_uom</label
+											>Product Unit</label
 										>
 										<select
 											name="product_uom"
 											class="form-select"
 											aria-label="Default select example"
 										>
-											<option selected>Choose product UOM</option>
+											<option selected>Choose Product Unit</option>
 											<option value="kg">Kg</option>
 											<option value="pcs">Pcs</option>
 										</select>
 									</div>
-									<div class="mb-3">
-										<label for="quantity" class="form-label">quantity</label>
+									<div class="mb-3 d-none">
+										<label for="quantity" class="form-label">Quantity</label>
 										<input
 											type="number"
 											class="form-control"
 											name="quantity"
 											id="quantity"
+											value="0"
+											readonly
 										/>
 									</div>
 									<div class="mb-3">
 										<label for="unit_price" class="form-label"
-											>unit_price</label
+											>Unit Price</label
 										>
 										<input
 											type="number"
@@ -375,18 +375,23 @@
 											id="unit_price"
 										/>
 									</div>
-									<div class="mb-3">
+									<div class="mb-3 d-none">
 										<label for="value" class="form-label">value</label>
 										<input
 											type="number"
 											class="form-control"
 											name="value"
 											id="value"
+											value="0"
 										/>
 									</div>
-									<button type="submit" class="btn btn-primary bg-darkblue">
+									<a
+										href="product-items.html"
+										type="submit"
+										class="btn btn-primary bg-darkblue"
+									>
 										Submit
-									</button>
+									</a>
 								</form>
 							</div>
 						</div>
